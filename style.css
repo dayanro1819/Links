@@ -65,3 +65,98 @@ body{
         0 20px 60px rgba(0,0,0,.35);
 
 }
+
+/* ===========================
+   PORTADA
+=========================== */
+
+.hero{
+
+    position:relative;
+
+}
+
+.profile-photo{
+
+    width:100%;
+
+    height:560px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:220px;
+
+    background:linear-gradient(
+        to top,
+        rgba(114,63,0,.98) 0%,
+        rgba(154,112,20,.78) 45%,
+        rgba(0,0,0,0) 100%
+    );
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:35px;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    text-align:center;
+
+    z-index:2;
+
+}
+
+.hero-overlay h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:54px;
+
+    color:#FFFDF8;
+
+    letter-spacing:5px;
+
+    margin-bottom:12px;
+
+    text-shadow:0 4px 18px rgba(0,0,0,.45);
+
+}
+
+.subtitle{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#F8F8F8;
+
+    font-size:20px;
+
+    font-weight:300;
+
+    letter-spacing:2px;
+
+    line-height:1.4;
+
+}
