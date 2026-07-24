@@ -38,18 +38,27 @@ body{
 
 .card{
 
-    width:100%;
-    max-width:420px;
+    width:min(92%,430px);
 
-    background:rgba(255,255,255,.10);
+    margin:auto;
 
-    backdrop-filter:blur(18px);
-
-    border-radius:28px;
+    border-radius:32px;
 
     overflow:hidden;
 
-    box-shadow:0 20px 60px rgba(0,0,0,.35);
+    background:linear-gradient(
+        180deg,
+        rgba(96,102,120,.20) 0%,
+        rgba(114,63,0,.35) 45%,
+        rgba(154,112,20,.55) 100%
+    );
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(173,177,194,.35);
+
+    box-shadow:
+        0 30px 70px rgba(114,63,0,.45);
 
 }
 
