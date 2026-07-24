@@ -105,17 +105,19 @@ body{
         rgba(0,0,0,0)
     );
 
-}
-
 .hero-overlay{
 
     position:absolute;
 
-    bottom:30px;
+    bottom:35px;
 
-    left:0;
+    left:50%;
 
-    width:100%;
+    transform:translateX(-50%);
+
+    width:90%;
+
+    max-width:340px;
 
     text-align:center;
 
@@ -131,11 +133,11 @@ h1{
 
     color:#FFFDF8;
 
-    font-size:50px;
+    font-size:46px;
 
     font-weight:700;
 
-    letter-spacing:4px;
+    letter-spacing:3px;
 
     text-transform:uppercase;
 
