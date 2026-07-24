@@ -1,9 +1,15 @@
-/* ===== RESET ===== */
+/* ===========================
+   RESET
+=========================== */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -18,214 +24,44 @@ body{
 
     align-items:center;
 
-    padding:40px 20px;
+    padding:30px 15px;
 
     background:
-        radial-gradient(circle at top left,
-        rgba(173,177,194,.28),
-        transparent 40%),
-
-        radial-gradient(circle at bottom right,
-        rgba(207,167,81,.18),
-        transparent 35%),
-
+        radial-gradient(circle at top left,#ADB1C2 0%,transparent 35%),
+        radial-gradient(circle at bottom right,#CFA75133 0%,transparent 40%),
         linear-gradient(
-        180deg,
-        #606678 0%,
-        #545A6B 35%,
-        #4B4F5E 100%);
+            180deg,
+            #606678 0%,
+            #545A6B 35%,
+            #4B4F5E 100%
+        );
+
 }
 
-/* ===== TARJETA ===== */
+/* ===========================
+   TARJETA
+=========================== */
 
 .card{
 
-    width:min(92%,430px);
-
-    margin:auto;
-
-    border-radius:32px;
+    width:100%;
+    max-width:430px;
 
     overflow:hidden;
 
+    border-radius:30px;
+
     background:linear-gradient(
         180deg,
-        rgba(96,102,120,.20) 0%,
-        rgba(114,63,0,.35) 45%,
-        rgba(154,112,20,.55) 100%
+        #723F00 0%,
+        #9A7014 45%,
+        #A57B1E 75%,
+        #CFA751 100%
     );
 
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(173,177,194,.35);
+    border:1px solid rgba(255,255,255,.12);
 
     box-shadow:
-        0 30px 70px rgba(114,63,0,.45);
-
-}
-
-/* ===== FOTO ===== */
-
-.profile-photo{
-
-    width:100%;
-
-    height:560px;
-
-    object-fit:cover;
-
-    display:block;
-
-}
-
-.hero{
-
-    position:relative;
-
-}
-
-.hero::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:0;
-
-    right:0;
-
-    bottom:0;
-
-    height:180px;
-
-    background:linear-gradient(
-        to top,
-        rgba(114,63,0,0.98),
-        rgba(154,112,20,0.70),
-        rgba(0,0,0,0)
-    );
-   } 
-
-.hero-overlay{
-
-    position:absolute;
-
-    bottom:20px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:90%;
-
-    max-width:340px;
-
-    text-align:center;
-
-    z-index:2;
-
-}
-
-/* ===== TEXTO ===== */
-
-h1{
-
-    font-family:'Cinzel', serif;
-
-    color:#FFFDF8;
-
-    font-size:46px;
-
-    font-weight:700;
-
-    letter-spacing:3px;
-
-    text-transform:uppercase;
-
-    text-shadow:0 3px 12px rgba(0,0,0,.35);
-
-    margin-bottom:12px;
-
-}
-
-.subtitle{
-
-    color:#F5F5F5;
-
-    font-size:22px;
-
-    font-weight:300;
-
-    letter-spacing:2px;
-
-    margin:0;
-
-    text-shadow:0 3px 10px rgba(0,0,0,.35);
-
-}
-
-/* ===== BOTONES ===== */
-
-.buttons{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-
-    padding:0 25px 35px;
-
-}
-.button{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:14px;
-
-    text-decoration:none;
-
-    padding:18px 22px;
-
-    border-radius:22px;
-
-    color:#FFFFFF;
-
-    font-size:18px;
-
-    font-weight:600;
-
-    letter-spacing:.5px;
-
-    background:linear-gradient(
-        135deg,
-        #723F00,
-        #9A7014,
-        #A57B1E,
-        #CFA751
-    );
-
-    border:1px solid rgba(255,255,255,.15);
-
-    box-shadow:
-        0 12px 30px rgba(114,63,0,.35);
-
-    transition:all .35s ease;
-
-}
-/* Colores */
-
-.button:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:
-        0 20px 40px rgba(114,63,0,.45);
-
-    filter:brightness(1.08);
+        0 20px 60px rgba(0,0,0,.35);
 
 }
