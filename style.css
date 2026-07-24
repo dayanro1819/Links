@@ -154,3 +154,56 @@ body{
     text-transform:uppercase;
     opacity:.95;
 }
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.buttons{
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.button{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    padding:16px 20px;
+    text-decoration:none;
+    font-size:1rem;
+    font-weight:600;
+    color:#fff;
+    border-radius:16px;
+    transition:all .3s ease;
+    background:linear-gradient(135deg,#9A7014,#CFA751);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.button i{
+    font-size:1.2rem;
+}
+
+.button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 28px rgba(0,0,0,.35);
+    background:linear-gradient(135deg,#A57B1E,#723F00);
+}
+
+.onlyfans{
+    font-size:1.05rem;
+}
+
+.instagram{
+    background:linear-gradient(135deg,#606678,#ADB1C2);
+}
+
+.facebook{
+    background:linear-gradient(135deg,#4b69b1,#2d4373);
+}
+
+.whatsapp{
+    background:linear-gradient(135deg,#25D366,#128C7E);
+}
