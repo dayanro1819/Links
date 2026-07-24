@@ -8,7 +8,7 @@
 
 body{
 
-    font-family:Poppins,Arial,sans-serif;
+    font-family:'Poppins', sans-serif;
 
     min-height:100vh;
 
@@ -18,17 +18,19 @@ body{
 
     align-items:center;
 
-    background:
-    linear-gradient(
-        135deg,
-        #ADB1C2,
-        #606678,
-        #723F00,
-        #9A7014,
-        #CFA751
-    );
-
     padding:30px;
+
+    background:
+        radial-gradient(circle at top left, #ADB1C2 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #CFA751 0%, transparent 35%),
+        linear-gradient(
+            145deg,
+            #606678 0%,
+            #723F00 40%,
+            #9A7014 70%,
+            #A57B1E 85%,
+            #CFA751 100%
+        );
 
 }
 
