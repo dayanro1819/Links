@@ -16,7 +16,8 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    background:#606678;
+    background:
+radial-gradient(circle at top,#6d7386,#2e3340);
 
     min-height:100vh;
 
@@ -187,13 +188,14 @@ body{
 }
 
 .button:hover{
-    transform:translateY(-3px);
+    transform:translateY(-4px) scale(1.02);
     box-shadow:0 12px 28px rgba(0,0,0,.35);
     background:linear-gradient(135deg,#A57B1E,#723F00);
 }
 
 .onlyfans{
-    font-size:1.05rem;
+    font-size:1.1rem;
+    padding:18px 22px;
 }
 
 .instagram{
