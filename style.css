@@ -209,3 +209,11 @@ radial-gradient(circle at top,#6d7386,#2e3340);
 .whatsapp{
     background:linear-gradient(135deg,#25D366,#128C7E);
 }
+
+.footer{
+    text-align:center;
+    color:rgba(255,255,255,.55);
+    font-size:.8rem;
+    margin:20px 0 10px;
+    letter-spacing:2px;
+}
