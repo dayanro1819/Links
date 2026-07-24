@@ -1,6 +1,6 @@
-/* ===========================
+/* ==========================
    RESET
-=========================== */
+========================== */
 
 *{
     margin:0;
@@ -16,6 +16,8 @@ body{
 
     font-family:'Poppins',sans-serif;
 
+    background:#606678;
+
     min-height:100vh;
 
     display:flex;
@@ -24,215 +26,71 @@ body{
 
     align-items:center;
 
-    padding:30px 15px;
+    padding:30px;
 
-    background:
-        radial-gradient(circle at top left,#ADB1C2 0%,transparent 35%),
-        radial-gradient(circle at bottom right,#CFA75133 0%,transparent 40%),
-        linear-gradient(
-            180deg,
-            #606678 0%,
-            #545A6B 35%,
-            #4B4F5E 100%
-        );
-
-}
-
-/* ===========================
-   TARJETA
-=========================== */
-
-.card{
-
-    width:100%;
-    max-width:430px;
-
-    overflow:hidden;
-
-    border-radius:30px;
-
-    background:linear-gradient(
-        180deg,
-        #723F00 0%,
-        #9A7014 45%,
-        #A57B1E 75%,
-        #CFA751 100%
-    );
-
-    border:1px solid rgba(255,255,255,.12);
-
-    box-shadow:
-        0 20px 60px rgba(0,0,0,.35);
-
-}
-
-/* ===========================
-   PORTADA
-=========================== */
-
-.hero{
+    overflow-x:hidden;
 
     position:relative;
 
 }
 
-.profile-photo{
+/* ==========================
+   BACKGROUND
+========================== */
 
-    width:100%;
+.background{
 
-    height:560px;
+    position:fixed;
 
-    object-fit:cover;
+    inset:0;
 
-    display:block;
+    background:
+    radial-gradient(circle at top,#ADB1C255,transparent 45%),
+    linear-gradient(180deg,#606678,#3f4555);
+
+    z-index:-2;
 
 }
 
-.hero::after{
+.background::after{
 
     content:"";
 
     position:absolute;
 
-    left:0;
-
-    right:0;
-
-    bottom:0;
-
-    height:220px;
+    inset:0;
 
     background:linear-gradient(
-        to top,
-        rgba(114,63,0,.98) 0%,
-        rgba(154,112,20,.78) 45%,
-        rgba(0,0,0,0) 100%
+    to bottom,
+    rgba(0,0,0,.10),
+    rgba(0,0,0,.45)
     );
 
 }
 
-.hero-overlay{
+/* ==========================
+   CARD
+========================== */
 
-    position:absolute;
+.card{
 
-    left:50%;
+    width:100%;
 
-    bottom:35px;
+    max-width:420px;
 
-    transform:translateX(-50%);
+    overflow:hidden;
 
-    width:90%;
+    border-radius:28px;
 
-    text-align:center;
+    background:rgba(255,255,255,.08);
 
-    z-index:2;
+    backdrop-filter:blur(18px);
 
-}
-
-.hero-overlay h1{
-
-    font-family:'Cinzel',serif;
-
-    font-size:54px;
-
-    color:#FFFDF8;
-
-    letter-spacing:5px;
-
-    margin-bottom:12px;
-
-    text-shadow:0 4px 18px rgba(0,0,0,.45);
-
-}
-
-.subtitle{
-
-    font-family:'Poppins',sans-serif;
-
-    color:#F8F8F8;
-
-    font-size:20px;
-
-    font-weight:300;
-
-    letter-spacing:2px;
-
-    line-height:1.4;
-
-}
-
-/* ===========================
-   BOTONES
-=========================== */
-
-.buttons{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:22px;
-
-    padding:28px;
-
-}
-
-.button{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:14px;
-
-    padding:20px;
-
-    text-decoration:none;
-
-    color:#FFFFFF;
-
-    font-size:20px;
-
-    font-weight:600;
-
-    border-radius:22px;
-
-    background:linear-gradient(
-        135deg,
-        #723F00 0%,
-        #9A7014 45%,
-        #A57B1E 75%,
-        #CFA751 100%
-    );
-
-    border:1px solid rgba(255,255,255,.18);
+    border:1px solid rgba(255,255,255,.12);
 
     box-shadow:
-        0 12px 25px rgba(0,0,0,.30);
+    0 20px 60px rgba(0,0,0,.45);
 
-    transition:.30s;
-
-}
-
-.button:hover{
-
-    transform:translateY(-4px);
-
-    filter:brightness(1.08);
-
-    box-shadow:
-        0 18px 35px rgba(0,0,0,.35);
-
-}
-
-.button i{
-
-    font-size:24px;
-
-    width:28px;
-
-    text-align:center;
+    animation:fadeUp .9s ease;
 
 }
