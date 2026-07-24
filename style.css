@@ -156,55 +156,55 @@ h1{
     padding:0 25px 35px;
 
 }
-
 .button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
 
     text-decoration:none;
 
-    text-align:center;
+    padding:18px 22px;
 
-    padding:18px;
+    border-radius:22px;
 
-    border-radius:18px;
+    color:#FFFFFF;
 
-    color:white;
+    font-size:18px;
 
     font-weight:600;
 
-    transition:.35s;
+    letter-spacing:.5px;
+
+    background:linear-gradient(
+        135deg,
+        #723F00,
+        #9A7014,
+        #A57B1E,
+        #CFA751
+    );
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:
+        0 12px 30px rgba(114,63,0,.35);
+
+    transition:all .35s ease;
 
 }
-
 /* Colores */
-
-.onlyfans{
-
-    background:#00AFF0;
-
-}
-
-.instagram{
-
-    background:#C13584;
-
-}
-
-.facebook{
-
-    background:#1877F2;
-
-}
-
-.whatsapp{
-
-    background:#25D366;
-
-}
 
 .button:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-6px);
 
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    box-shadow:
+        0 20px 40px rgba(114,63,0,.45);
+
+    filter:brightness(1.08);
 
 }
