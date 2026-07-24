@@ -8,7 +8,7 @@
 
 body{
 
-    font-family:'Poppins', sans-serif;
+    font-family:'Poppins',sans-serif;
 
     min-height:100vh;
 
@@ -18,20 +18,22 @@ body{
 
     align-items:center;
 
-    padding:30px;
+    padding:40px 20px;
 
     background:
-        radial-gradient(circle at top left, #ADB1C2 0%, transparent 35%),
-        radial-gradient(circle at bottom right, #CFA751 0%, transparent 35%),
-        linear-gradient(
-            145deg,
-            #606678 0%,
-            #723F00 40%,
-            #9A7014 70%,
-            #A57B1E 85%,
-            #CFA751 100%
-        );
+        radial-gradient(circle at top left,
+        rgba(173,177,194,.28),
+        transparent 40%),
 
+        radial-gradient(circle at bottom right,
+        rgba(207,167,81,.18),
+        transparent 35%),
+
+        linear-gradient(
+        180deg,
+        #606678 0%,
+        #545A6B 35%,
+        #4B4F5E 100%);
 }
 
 /* ===== TARJETA ===== */
